@@ -3,7 +3,13 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio Version 16
 VisualStudioVersion = 16.0.29709.97
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Uplift", "Uplift\Uplift.csproj", "{8516CF4F-28F8-45F0-BFC8-868F78E6D7BF}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Uplift", "Uplift\Uplift.csproj", "{8516CF4F-28F8-45F0-BFC8-868F78E6D7BF}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Uplift.DataAccess", "Uplift.DataAccess\Uplift.DataAccess.csproj", "{8EE4AD39-80FB-451E-8DBD-62901B662527}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Uplift.Models", "Uplift.Models\Uplift.Models.csproj", "{5CD9D7CE-21B6-4FA7-B345-435045ED0F78}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Uplift.Utility", "Uplift.Utility\Uplift.Utility.csproj", "{8F57F502-FF48-4BDC-9B36-414272D3C629}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -15,6 +21,18 @@ Global
 		{8516CF4F-28F8-45F0-BFC8-868F78E6D7BF}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{8516CF4F-28F8-45F0-BFC8-868F78E6D7BF}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{8516CF4F-28F8-45F0-BFC8-868F78E6D7BF}.Release|Any CPU.Build.0 = Release|Any CPU
+		{8EE4AD39-80FB-451E-8DBD-62901B662527}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{8EE4AD39-80FB-451E-8DBD-62901B662527}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{8EE4AD39-80FB-451E-8DBD-62901B662527}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{8EE4AD39-80FB-451E-8DBD-62901B662527}.Release|Any CPU.Build.0 = Release|Any CPU
+		{5CD9D7CE-21B6-4FA7-B345-435045ED0F78}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{5CD9D7CE-21B6-4FA7-B345-435045ED0F78}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{5CD9D7CE-21B6-4FA7-B345-435045ED0F78}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{5CD9D7CE-21B6-4FA7-B345-435045ED0F78}.Release|Any CPU.Build.0 = Release|Any CPU
+		{8F57F502-FF48-4BDC-9B36-414272D3C629}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{8F57F502-FF48-4BDC-9B36-414272D3C629}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{8F57F502-FF48-4BDC-9B36-414272D3C629}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{8F57F502-FF48-4BDC-9B36-414272D3C629}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
