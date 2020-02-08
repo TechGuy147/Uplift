@@ -30,6 +30,7 @@ namespace Uplift.DataAccess.Data.Repository
             var objFromDb = _db.Frequency.FirstOrDefault(s => s.FrequencyId == frequency.FrequencyId);
 
             objFromDb.Name = frequency.Name;
+            objFromDb.FrequencyCount = frequency.FrequencyCount;
 
             _db.SaveChanges();
         }
