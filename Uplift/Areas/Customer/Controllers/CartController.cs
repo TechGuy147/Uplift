@@ -68,10 +68,10 @@ namespace Uplift.Areas.Customer.Controllers
             {
                 List<int> sessionList = new List<int>();
                 sessionList = HttpContext.Session.GetObject<List<int>>(SD.SessionCart);
+                CartVM.ServiceList = new List<Service>();
                 foreach (int serviceId in sessionList)
                 {
-                    CartVM.ServiceList.Add(_unitOfWork.Service.GetFirstOrDefault(u => u.Id == serviceId, includeProperties: "Frequency,Category"));
-
+                    CartVM.ServiceList.Add(_unitOfWork.Service.Get(serviceId));
                 }
             }
             if (!ModelState.IsValid)
@@ -96,8 +96,8 @@ namespace Uplift.Areas.Customer.Controllers
                         Price = item.Price
                     };
                     _unitOfWork.OrderDetails.Add(orderDetails);
-                    _unitOfWork.Save();
                 }
+                _unitOfWork.Save();
                 HttpContext.Session.SetObject(SD.SessionCart, new List<int>());
                 return RedirectToAction("OrderConfirmation", "Cart", new { id = CartVM.OrderHeader.Id });
             }

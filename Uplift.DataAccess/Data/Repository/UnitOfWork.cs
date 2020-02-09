@@ -29,6 +29,8 @@ namespace Uplift.DataAccess.Data.Repository
 
         public IOrderDetailsRepository OrderDetails { get; private set; }
 
+        public IUserRepository User { get; private set; }
+
         public void Dispose()
         {
             _db.Dispose();

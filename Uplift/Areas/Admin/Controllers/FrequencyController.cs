@@ -52,6 +52,7 @@ namespace Uplift.Areas.Admin.Controllers
                 {
                     _unitOfWork.Frequency.Update(frequency);
                 }
+                _unitOfWork.Save();
                 return RedirectToAction(nameof(Index));
             }
             return View(frequency);
